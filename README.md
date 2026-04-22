@@ -1,242 +1,123 @@
 # 📊 Food App User Behavior Analysis Project
 
-# Análise de Dados Aplicada ao Funil de Conversão e Teste A/A/B em Aplicativo de Vendas de Alimentos
+## Análise de Dados Aplicada ao Funil de Conversão e Teste A/A/B em Aplicativo de Vendas de Alimentos
+sprint_11_vendas_alim
 
-# 
+---
 
-# Autor: Carlos Eduardo Cruz Nakandakare
+**Autor:** Carlos Eduardo Cruz Nakandakare
 
-# 
+---
 
 # 🎯 Objetivo do Projeto
 
-# 
+Este projeto tem como objetivo realizar uma análise do comportamento dos usuários em um aplicativo mobile de venda de produtos alimentícios, utilizando dados de eventos registrados durante a navegação no aplicativo.
 
-# Este projeto tem como objetivo realizar uma análise do comportamento dos usuários em um aplicativo mobile de venda de produtos alimentícios, utilizando dados de eventos registrados durante a navegação no aplicativo.
+A análise busca compreender como os usuários interagem com as diferentes telas do aplicativo e em qual etapa ocorre a maior perda no processo de compra.
 
-# 
+Além disso, o projeto avalia um experimento A/A/B realizado pela equipe de design do aplicativo, que deseja verificar se uma alteração na tipografia da interface influencia o comportamento dos usuários.
 
-# A análise busca compreender como os usuários interagem com as diferentes telas do aplicativo e em qual etapa ocorre a maior perda no processo de compra.
+As principais perguntas investigadas foram:
 
-# 
+- Como os usuários percorrem o funil de conversão dentro do aplicativo?
+- Em qual etapa ocorre a maior perda de usuários?
+- Os grupos de controle do experimento são estatisticamente equivalentes?
+- A alteração visual testada gera impacto significativo na interação dos usuários?
 
-# Além disso, o projeto avalia um experimento A/A/B realizado pela equipe de design do aplicativo, que deseja verificar se uma alteração na tipografia da interface influencia o comportamento dos usuários.
+O projeto simula um cenário comum em empresas digitais, onde testes experimentais e análise de funil são utilizados para orientar decisões de produto e design.
 
-# 
-
-# As principais perguntas investigadas foram:
-
-# 
-
-# Como os usuários percorrem o funil de conversão dentro do aplicativo?
-
-# 
-
-# Em qual etapa ocorre a maior perda de usuários?
-
-# 
-
-# Os grupos de controle do experimento são estatisticamente equivalentes?
-
-# 
-
-# A alteração visual testada gera impacto significativo na interação dos usuários?
-
-# 
-
-# O projeto simula um cenário comum em empresas digitais, onde testes experimentais e análise de funil são utilizados para orientar decisões de produto e design.
-
-# 
+---
 
 # 📈 Resultado
 
-# 
+A análise permitiu:
 
-# A análise permitiu:
+- Identificar o fluxo principal de navegação dos usuários no aplicativo
+- Construir o funil de conversão do processo de compra
+- Determinar em qual etapa ocorre a maior perda de usuários
+- Avaliar a consistência estatística entre os grupos de controle (A/A)
+- Medir o impacto da alteração de design testada no grupo experimental (A/B)
 
-# 
+Os resultados indicam que:
 
-# Identificar o fluxo principal de navegação dos usuários no aplicativo
+- Os grupos de controle apresentam comportamento estatisticamente semelhante, validando o experimento.
+- A alteração de fonte não gerou impacto negativo no comportamento do usuário.
+- Houve pequenas variações positivas no grupo de teste, mas sem diferença estatisticamente significativa.
 
-# 
+Esses resultados demonstram como análises experimentais e funis de conversão podem apoiar decisões de produto baseadas em dados.
 
-# Construir o funil de conversão do processo de compra
-
-# 
-
-# Determinar em qual etapa ocorre a maior perda de usuários
-
-# 
-
-# Avaliar a consistência estatística entre os grupos de controle (A/A)
-
-# 
-
-# Medir o impacto da alteração de design testada no grupo experimental (A/B)
-
-# 
-
-# Os resultados indicam que:
-
-# 
-
-# Os grupos de controle apresentam comportamento estatisticamente semelhante, validando o experimento.
-
-# 
-
-# A alteração de fonte não gerou impacto negativo no comportamento do usuário.
-
-# 
-
-# Houve pequenas variações positivas no grupo de teste, mas sem diferença estatisticamente significativa.
-
-# 
-
-# Esses resultados demonstram como análises experimentais e funis de conversão podem apoiar decisões de produto baseadas em dados.
-
-# 
+---
 
 # 🛠 Ferramentas Utilizadas
 
-# 
+O projeto foi desenvolvido utilizando o ecossistema Python para análise de dados.
 
-# O projeto foi desenvolvido utilizando o ecossistema Python para análise de dados.
+## Linguagem e Ambiente
 
-# 
+- Python
+- Jupyter Notebook
 
-# Linguagem e Ambiente
+## Bibliotecas
 
-# 
+- Pandas → manipulação e transformação de dados
+- NumPy → operações numéricas
+- Matplotlib → visualização de dados
+- Seaborn → visualizações estatísticas
+- Plotly → visualizações interativas
+- SciPy → testes estatísticos
 
-# Python
-
-# Jupyter Notebook
-
-# 
-
-# Bibliotecas
-
-# 
-
-# Pandas → manipulação e transformação de dados
-
-# 
-
-# NumPy → operações numéricas
-
-# 
-
-# Matplotlib → visualização de dados
-
-# 
-
-# Seaborn → visualizações estatísticas
-
-# 
-
-# Plotly → visualizações interativas
-
-# 
-
-# SciPy → testes estatísticos
-
-# 
+---
 
 # 📊 Técnicas Aplicadas
 
-# 
+Durante o projeto foram aplicadas diversas técnicas de análise de dados:
 
-# Durante o projeto foram aplicadas diversas técnicas de análise de dados:
+## Data Cleaning
 
-# 
+- Verificação de valores nulos
+- Remoção de duplicatas
+- Conversão de timestamp para formato datetime
 
-# Data Cleaning
+---
 
-# 
+## Análise Exploratória de Dados (EDA)
 
-# Verificação de valores nulos
+- Frequência de eventos
+- Distribuição temporal dos dados
+- Identificação de usuários únicos
+- Análise de comportamento por grupo experimental
 
-# 
+---
 
-# Remoção de duplicatas
+## Análise de Funil de Conversão
 
-# 
+Construção do fluxo principal de navegação do usuário:
 
-# Conversão de timestamp para formato datetime
+```text
+MainScreenAppear
+      ↓
+CartScreenAppear
+      ↓
+PaymentScreenSuccessful
 
-# 
 
-# Análise Exploratória de Dados (EDA)
 
-# 
+## Cálculo das taxas de conversão entre as etapas do funil.
 
-# Frequência de eventos
+### Testes Estatísticos
 
-# 
+Aplicação de testes estatísticos para validar o experimento:
 
-# Distribuição temporal dos dados
+### Teste Z para proporções
 
-# 
+Comparação da frequência de eventos entre os grupos.
 
-# Identificação de usuários únicos
+### Teste t de Student
 
-# 
+Comparação das médias entre os grupos experimentais.
 
-# Análise de comportamento por grupo experimental
+### Teste Mann-Whitney U
 
-# 
+Teste não paramétrico para comparação das distribuições.
 
-# Análise de Funil de Conversão
-
-# 
-
-# Construção do fluxo principal de navegação do usuário:
-
-# 
-
-# MainScreenAppear
-
-# &#x20;     ↓
-
-# CartScreenAppear
-
-# &#x20;     ↓
-
-# PaymentScreenSuccessful
-
-# 
-
-# Cálculo das taxas de conversão entre as etapas do funil.
-
-# 
-
-# Testes Estatísticos
-
-# 
-
-# Aplicação de testes estatísticos para validar o experimento:
-
-# 
-
-# Teste Z para proporções
-
-# 
-
-# Comparação da frequência de eventos entre os grupos.
-
-# 
-
-# Teste t de Student
-
-# 
-
-# Comparação das médias entre os grupos experimentais.
-
-# 
-
-# Teste Mann-Whitney U
-
-# 
-
-# Teste não paramétrico para comparação das distribuições.
 
