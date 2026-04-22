@@ -99,8 +99,9 @@ MainScreenAppear
 CartScreenAppear
       ↓
 PaymentScreenSuccessful
+```
 
-
+---
 
 ## Cálculo das taxas de conversão entre as etapas do funil.
 
